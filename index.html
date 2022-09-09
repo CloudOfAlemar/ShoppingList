@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4982c8e01d.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Shopping List</title>
+</head>
+<body>
+  
+  <div class="shopping-list-component">
+    <header class="header-content">
+      <h1 class="main-heading">
+        Shopping List
+        <i class="fa-solid fa-list-check checklist-icon"></i>
+      </h1>
+      <p class="items-collected-display">
+        You've collected
+        <span class="items-collected-value-display">0</span> /
+        <span class="items-total-value-display">0</span> items
+      </p>
+    </header>
+
+    <main class="main-content">
+      <div class="item-input-area">
+        <h2 class="item-input-heading">
+          <i class="fa-solid fa-circle-plus plus-icon"></i>
+          <span class="secondary-color">
+            Add
+          </span>
+          new item
+        </h2>
+        <div class="item-input-container">
+          <input type="text" class="item-input-box" placeholder="Enter item">
+          <span class="warning">( Refreshing the webpage will delete list items,
+            still learning to save data locally. Sorry! )</span>
+        </div>
+      </div>
+
+      <div class="list-items-area">
+        <h3 class="clear-items-heading">
+          Clear list items:
+        </h3>
+        <div class="clear-items-area">
+          <button class="clear-all-items-button">
+            Clear all items
+          </button>
+          <button class="clear-collected-items-button">
+            Clear collected items
+          </button>
+        </div>
+        <h3 class="list-items-heading">List items:</h3>
+        <ul class="list-items-container"></ul>
+      </div>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
